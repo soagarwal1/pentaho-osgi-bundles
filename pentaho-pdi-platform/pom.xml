@@ -15,11 +15,12 @@
   <url>http://www.pentaho.com</url>
   <properties>
     <mondrian.version>10.3.0.0-SNAPSHOT</mondrian.version>
+    <javax.servlet-api.version>4.0.4</javax.servlet-api.version>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.osgi</groupId>
-      <artifactId>org.osgi.core</artifactId>
+      <artifactId>osgi.core</artifactId>
     </dependency>
 
     <dependency>
@@ -82,8 +83,13 @@
       <artifactId>pax-web-spi</artifactId>
     </dependency>
     <dependency>
-      <groupId>javax.servlet</groupId>
-      <artifactId>javax.servlet-api</artifactId>
+      <groupId>org.ops4j.pax.swissbox</groupId>
+      <artifactId>pax-swissbox-core</artifactId>
+      <version>1.8.2</version>
+    </dependency>
+    <dependency>
+      <groupId>jakarta.servlet</groupId>
+      <artifactId>jakarta.servlet-api</artifactId>
       <version>${javax.servlet-api.version}</version>
     </dependency>
     <dependency>
